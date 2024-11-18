@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Latest Content */
+.latest-content {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.latest-content h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video {
+    margin: 10px;
+}
+
+.video iframe {
+    width: 320px;
+    height: 180px;
+}
+
+.video h3 {
+    margin-top: 10px;
+}
+
+/* About Us */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hosts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.host {
+    margin: 20px;
+    text-align: center;
+}
+
+.host img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.host h2 {
+    margin-top: 20px;
+}
+
+.host p {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Podcasts */
+.podcasts {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.podcast-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.podcast {
+    margin: 20px 0;
+    width: 80%;
+}
+
+.podcast iframe {
+    width: 100%;
+    height: 180px;
+}
+
+.podcast h3 {
+    margin-top: 10px;
+}
+
+.podcast p {
+    margin-top: 10px;
+}
+
+/* Contact Form */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+}
+
+.social-links a:hover {
+    color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hosts {
+        flex-direction: column;
+    }
+
+    .host {
+        margin: 20px 0;
+    }
+
+    .video-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: auto;
+    }
+}
